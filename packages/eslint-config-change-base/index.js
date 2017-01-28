@@ -8,6 +8,7 @@ module.exports = {
     './rules/overrides',
     './rules/lodash',
     './rules/mocha',
+    './rules/promise',
   ].map(require.resolve),
 
   rules: {},
