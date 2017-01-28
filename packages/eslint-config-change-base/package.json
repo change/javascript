@@ -1,0 +1,31 @@
+{
+  "name": "eslint-config-change-base",
+  "version": "0.1.0",
+  "description": "Change.org's base ESLint config",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/change/javascript"
+  },
+  "author": "Change Engineering",
+  "license": "MIT",
+  "homepage": "https://github.com/change/javascript",
+  "dependencies": {
+    "eslint-config-airbnb-base": "^11.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.14.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-lodash": "^2.3.3",
+    "eslint-plugin-mocha": "^4.8.0"
+  },
+  "peerDependencies": {
+    "eslint": "^3.14.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-lodash": "^2.3.3",
+    "eslint-plugin-mocha": "^4.8.0"
+  },
+  "engines": {
+    "node": ">= 6"
+  }
+}
