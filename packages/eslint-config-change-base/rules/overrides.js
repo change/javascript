@@ -1,5 +1,13 @@
 module.exports = {
   rules: {
+    // Items which we prefer to be more strict than the AirBnB defaults
+    complexity: ['error', { max: 6 }],
+    eqeqeq: 'error',
+    'max-depth': ['error', { max: 3 }],
+    'max-statements': ['error', { max: 18 }],
+    'no-console': 'error',
+    'no-multiple-empty-lines': ['error', { max: 1 }],
+
     // AirBnB attempts to set `functions` to `always-multiline`
     // which requires babel support since trailing commas in function
     // declarations or invocations are a stage 3 proposal currently.

@@ -11,7 +11,10 @@ It requires several peer dependencies:
  * `eslint-plugin-mocha`
  * `eslint-plugin-promise`
 
-See package.json for the currently required versions.
+See the currently required versions by running this:
+```
+	npm info eslint-config-change-base@latest peerDependencies
+```
 
 To use, just include this module as a devDependency, and then add
 ```
@@ -19,6 +22,15 @@ To use, just include this module as a devDependency, and then add
 ```
 to your eslintrc.
 
+By default we assume you are using lodash 4.x.  If you are instead using 3.x, then also make sure to
+include this in your eslintrc:
+```
+  "settings": {
+    "lodash": {
+      "version": 3
+    }
+  }
+```
 
 ## Contributing
 
