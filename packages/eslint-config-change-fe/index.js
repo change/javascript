@@ -8,6 +8,7 @@ module.exports = {
   extends: [
     'eslint-config-airbnb',
     'eslint-config-change-base',
+    './rules/overrides',
   ].map(require.resolve),
 
   rules: {},
