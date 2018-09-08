@@ -5,9 +5,11 @@ This package provides Change.org's front-end eslint configuration.  It extends
 
 It requires these modules as peer dependencies:
  * `eslint`
+ * `eslint-import-resolver-node`
  * `eslint-plugin-import`
  * `eslint-plugin-jsx-a11y`
  * `eslint-plugin-lodash`
+ * `eslint-plugin-jest`
  * `eslint-plugin-mocha`
  * `eslint-plugin-promise`
  * `eslint-plugin-react`
