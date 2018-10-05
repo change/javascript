@@ -7,10 +7,11 @@ lodash, mocha and promises
 It requires several peer dependencies:
  * `eslint`
  * `eslint-plugin-import`
- * `eslint-plugin-lodash`
  * `eslint-plugin-jest`
+ * `eslint-plugin-lodash`
  * `eslint-plugin-mocha`
  * `eslint-plugin-promise`
+ * `eslint-plugin-security`
 
 See the currently required versions by running this:
 ```

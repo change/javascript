@@ -7,12 +7,13 @@ It requires these modules as peer dependencies:
  * `eslint`
  * `eslint-import-resolver-node`
  * `eslint-plugin-import`
+ * `eslint-plugin-jest`
  * `eslint-plugin-jsx-a11y`
  * `eslint-plugin-lodash`
- * `eslint-plugin-jest`
  * `eslint-plugin-mocha`
  * `eslint-plugin-promise`
  * `eslint-plugin-react`
+ * `eslint-plugin-security`
 
 See the currently required versions by running this:
 ```
