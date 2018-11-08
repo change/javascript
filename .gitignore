@@ -1,4 +1,3 @@
-node_modules
 *.swp
-
-*.pem
+node_modules
+packages/*/package-lock.json
