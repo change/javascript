@@ -10,7 +10,6 @@ It requires these modules as peer dependencies:
  * `eslint-plugin-jest`
  * `eslint-plugin-jsx-a11y`
  * `eslint-plugin-lodash`
- * `eslint-plugin-mocha`
  * `eslint-plugin-promise`
  * `eslint-plugin-react`
  * `eslint-plugin-security`
@@ -25,3 +24,8 @@ To use, just include this module as a devDependency, and then add
   "extends": "change-fe"
 ```
 to your eslintrc.
+
+If using `mocha` or `jest`, you'll want to do something like this:
+```
+  "extends": ["change-fe", "change-base/jest"]
+```
