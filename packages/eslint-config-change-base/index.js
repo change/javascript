@@ -5,11 +5,9 @@ module.exports = {
 
   extends: [
     'eslint-config-airbnb-base',
-    './rules/overrides',
-    './rules/lodash',
-    './rules/mocha',
-    './rules/promise',
+    './airbnb-overrides',
+    './lodash',
+    './promise',
+    './security',
   ].map(require.resolve),
-
-  rules: {},
 };
