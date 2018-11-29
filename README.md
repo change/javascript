@@ -1,4 +1,4 @@
-# Change.org JavaScript Style Guide
+# Change.org JavaScript Style Guide/Tools
 
 We use the [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript) as a foundation for
 our own JavaScript code style recommendations, and [eslint](https://www.npmjs.com/package/eslint)
@@ -10,3 +10,5 @@ other relevant plugins and overrides.
 
 * [eslint-config-change-base](packages/eslint-config-change-base) - use for Node.js projects
 * [eslint-config-change-fe](packages/eslint-config-change-fe) - use for front-end projects
+
+Additionally, this repo contains `change-codemod` and `eslint-plugin-change` to transform Javascript code and enforce the transformations (as well as other custom rules).
