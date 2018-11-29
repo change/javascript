@@ -1,7 +1,6 @@
 module.exports = {
   extends: [
     'change-base',
-    'change-base/jest',
     'prettier',
   ],
 
