@@ -32,6 +32,13 @@ _.assignIn({}, foo, { bar: 'baz' });
 };
 ```
 
+## Development
+
+### Run tests
+```
+npm test
+```
+
 ### Creating a new rule
 
 #### Writing your rule

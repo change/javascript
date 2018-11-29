@@ -4,7 +4,7 @@
   "description": "Eslint rules for change javascript repos",
   "main": "index.js",
   "scripts": {
-    "test": "npx eslint . && npx jest"
+    "test": "eslint . && jest"
   },
   "author": "",
   "license": "ISC",
