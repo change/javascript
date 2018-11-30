@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "Eslint rules for change javascript repos",
   "main": "index.js",
-  "scripts": {
-    "test": "eslint . && jest"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/change/javascript"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Change Engineering",
+  "license": "MIT",
+  "homepage": "https://github.com/change/javascript",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "eslint": "^5.9.0",
@@ -22,5 +24,8 @@
     "eslint-plugin-security": "^1.4.0",
     "jest": "^23.6.0",
     "prettier": "^1.15.2"
+  },
+  "scripts": {
+    "test": "eslint . && jest"
   }
 }
