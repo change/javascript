@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  build:
+    parallelism: 1
+    working_directory: ~/change/javascript
+    docker:
+      - image: circleci/node:10-stretch
+    steps:
+      - checkout
+      - run: (cd packages/change-codemod && npm install && npm test)
+      - run: (cd packages/eslint-plugin-change && npm install && npm test)

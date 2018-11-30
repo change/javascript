@@ -1,0 +1,26 @@
+{
+  "name": "eslint-plugin-change",
+  "version": "1.0.0",
+  "description": "Eslint rules for change javascript repos",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint . && jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "eslint": "^5.9.0",
+    "eslint-config-change-base": "^6.0.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^22.1.0",
+    "eslint-plugin-lodash": "^4.0.0",
+    "eslint-plugin-mocha": "^5.2.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-security": "^1.4.0",
+    "jest": "^23.6.0",
+    "prettier": "^1.15.2"
+  }
+}
