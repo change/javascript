@@ -1,7 +1,5 @@
 module.exports = {
-  plugins: [
-    'mocha',
-  ],
+  plugins: ['mocha'],
 
   env: {
     mocha: true,
