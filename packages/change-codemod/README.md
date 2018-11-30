@@ -12,7 +12,7 @@ npm install
 
 ### lodash-to-object-spread
 ```
-make lodash-to-object-spread path=path/to/your/js/repo
+TARGET=path/to/your/js/repo npm run lodash-to-object-spread
 ```
 #### Description
 Converts non-mutating usees of `_.extend` and `_.assignIn` to use object spread syntax.
@@ -42,8 +42,5 @@ See https://github.com/facebook/jscodeshift#unit-testing
 #### Implementing a make task for your codemod
 
 ```
-mod-name:
-	make run-codemod transform=path/to/your/transform.js path=$(path)
-	make run-codemod transform=path/to/another/transform.js path=$(path)
-	@echo "Done! Enable the change/name-of-enforcing-lint-rule rule to enforce this change."
+    "lodash-to-object-spread": "TRANSFORM_PATH=path/to/your/transform.js npm run codemod && TRANSFORM_PATH=path/to/another/transform.js npm run codemod"
 ```
