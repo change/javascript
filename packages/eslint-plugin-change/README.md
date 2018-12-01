@@ -1,4 +1,4 @@
-# change-codemod
+# eslint-plugin-change
 
 Custom lint rules for change javascript repos.
 
@@ -16,6 +16,8 @@ npm install
 ```
 _.extend(foo, { bar: 'baz' });
 _.assignIn(foo, { bar: 'baz' });
+_.extend({}, ...foo);
+_.assignIn({}, ...foo);
 ```
 
 #### Invalid

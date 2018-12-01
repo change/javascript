@@ -1,12 +1,16 @@
 {
-  "name": "eslint-plugin-change",
-  "version": "1.0.0",
+  "name": "@change-org/eslint-plugin-change",
+  "version": "1.1.0",
   "description": "Eslint rules for change javascript repos",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/change/javascript"
+  },
   "scripts": {
     "test": "eslint . && jest"
   },
-  "author": "",
+  "author": "Change Engineering",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -22,5 +26,8 @@
     "eslint-plugin-security": "^1.4.0",
     "jest": "^23.6.0",
     "prettier": "^1.15.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
   }
 }

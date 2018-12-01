@@ -1,14 +1,18 @@
 {
-  "name": "change-codemod",
+  "name": "@change-org/change-codemod",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/change/javascript"
+  },
   "scripts": {
     "test": "eslint . && jest",
     "codemod": "jscodeshift -t $TRANSFORM_PATH --extensions=js,jsx --ignore-config=$TARGET/.gitignore --printOptions='{ \"trailingCommma\": true }' $TARGET",
     "lodash-to-object-spread": "TRANSFORM_PATH=transforms/lodash-to-object-assign.js npm run codemod && TRANSFORM_PATH=node_modules/js-codemod/transforms/rm-object-assign.js npm run codemod"
   },
-  "author": "",
+  "author": "Change Engineering",
   "license": "ISC",
   "dependencies": {
     "js-codemod": "git+ssh://git@github.com/cpojer/js-codemod.git#0677c0b6029031e4f71bbbfc406a0465e6f7acd2",

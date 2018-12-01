@@ -1,7 +1,7 @@
 const { RuleTester } = require('eslint');
 const rule = require('../prefer-object-spread-to-lodash');
 
-const ruleTester = new RuleTester();
+const ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 2015 } });
 
 ruleTester.run('prefer-object-spread-to-lodash', rule, {
   valid: [
@@ -10,6 +10,12 @@ ruleTester.run('prefer-object-spread-to-lodash', rule, {
     },
     {
       code: "_.assignIn(foo, { bar: 'baz' });",
+    },
+    {
+      code: '_.extend({}, ...foo);',
+    },
+    {
+      code: '_.assignIn({}, ...foo);',
     },
   ],
   invalid: [
