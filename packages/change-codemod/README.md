@@ -39,7 +39,7 @@ https://astexplorer.net/ is very helpful here.
 
 See https://github.com/facebook/jscodeshift#unit-testing
 
-#### Implementing a make task for your codemod
+#### Implementing an npm script for your codemod
 
 ```
     "lodash-to-object-spread": "TRANSFORM_PATH=path/to/your/transform.js npm run codemod && TRANSFORM_PATH=path/to/another/transform.js npm run codemod"
