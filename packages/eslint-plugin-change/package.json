@@ -1,6 +1,6 @@
 {
-  "name": "eslint-plugin-change",
-  "version": "1.0.0",
+  "name": "@change-org/eslint-plugin-change",
+  "version": "1.1.0",
   "description": "Eslint rules for change javascript repos",
   "main": "index.js",
   "repository": {
@@ -10,6 +10,9 @@
   "author": "Change Engineering",
   "license": "MIT",
   "homepage": "https://github.com/change/javascript",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "eslint": "^5.9.0",
@@ -26,6 +29,7 @@
     "prettier": "^1.15.2"
   },
   "scripts": {
-    "test": "eslint . && jest"
+    "pretest": "eslint .",
+    "test": "jest"
   }
 }
