@@ -1,3 +1,9 @@
 module.exports = {
-  extends: './index.js',
+  extends: ['./index.js', 'prettier'],
+
+  plugins: ['prettier'],
+
+  rules: {
+    'prettier/prettier': ['error'],
+  },
 };
