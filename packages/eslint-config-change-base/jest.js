@@ -1,15 +1,11 @@
 module.exports = {
-  plugins: [
-    'jest',
-  ],
+  plugins: ['jest'],
 
   env: {
     'jest/globals': true,
   },
 
-  extends: [
-    'plugin:jest/recommended',
-  ],
+  extends: ['plugin:jest/recommended'],
 
   rules: {
     'jest/no-hooks': ['error', { allow: ['afterEach'] }],

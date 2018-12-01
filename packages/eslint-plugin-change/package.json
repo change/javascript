@@ -7,11 +7,12 @@
     "type": "git",
     "url": "https://github.com/change/javascript"
   },
-  "scripts": {
-    "test": "eslint . && jest"
-  },
   "author": "Change Engineering",
-  "license": "ISC",
+  "license": "MIT",
+  "homepage": "https://github.com/change/javascript",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "eslint": "^5.9.0",
@@ -27,7 +28,8 @@
     "jest": "^23.6.0",
     "prettier": "^1.15.2"
   },
-  "dependencies": {
-    "lodash": "^4.17.11"
+  "scripts": {
+    "pretest": "eslint .",
+    "test": "jest"
   }
 }

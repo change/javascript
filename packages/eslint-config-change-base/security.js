@@ -1,9 +1,5 @@
 module.exports = {
-  plugins: [
-    'security',
-  ],
+  plugins: ['security'],
 
-  extends: [
-    'plugin:security/recommended',
-  ],
+  extends: ['plugin:security/recommended'],
 };

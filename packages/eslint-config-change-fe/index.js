@@ -5,10 +5,7 @@ module.exports = {
     node: true,
   },
 
-  extends: [
-    'eslint-config-airbnb',
-    'eslint-config-change-base',
-    './jsx-a11y',
-    './react',
-  ].map(require.resolve),
+  extends: ['eslint-config-airbnb', 'eslint-config-change-base', './jsx-a11y', './react'].map(
+    require.resolve
+  ),
 };

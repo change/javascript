@@ -1,7 +1,5 @@
 module.exports = {
-  plugins: [
-    'promise',
-  ],
+  plugins: ['promise'],
 
   rules: {
     'promise/always-return': 'error',

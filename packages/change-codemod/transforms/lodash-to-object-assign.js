@@ -5,7 +5,10 @@ module.exports = (file, api, options) => {
 
   const transformLodashExtendToObjectAssign = path =>
     j(path).replaceWith(
-      j.callExpression(j.memberExpression(j.identifier('Object'), j.identifier('assign')), path.value.arguments)
+      j.callExpression(
+        j.memberExpression(j.identifier('Object'), j.identifier('assign')),
+        path.value.arguments
+      )
     );
 
   root
@@ -18,5 +21,6 @@ module.exports = (file, api, options) => {
     )
     .filter(p => !p.value.arguments.some(a => a.type === 'SpreadElement'))
     .forEach(transformLodashExtendToObjectAssign);
+
   return root.toSource(printOptions);
 };

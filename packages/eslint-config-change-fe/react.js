@@ -1,9 +1,5 @@
 module.exports = {
-  plugins: [
-    'react',
-  ],
+  plugins: ['react'],
 
-  extends: [
-    'plugin:react/recommended',
-  ],
+  extends: ['plugin:react/recommended'],
 };
