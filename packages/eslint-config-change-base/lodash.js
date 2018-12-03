@@ -1,7 +1,5 @@
 module.exports = {
-  plugins: [
-    'lodash',
-  ],
+  plugins: ['lodash'],
 
   rules: {
     'lodash/callback-binding': 'error',

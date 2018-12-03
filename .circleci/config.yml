@@ -1,0 +1,26 @@
+version: 2
+jobs:
+  build:
+    parallelism: 1
+    working_directory: ~/change/javascript
+    docker:
+    - image: circleci/node:10-stretch
+
+    steps:
+    - checkout
+
+    - run:
+        name: change-codemod
+        command: (cd packages/change-codemod && npm install && npm test)
+
+    - run:
+        name: eslint-config-change-base
+        command: (cd packages/eslint-config-change-base && npm install && npm test)
+
+    - run:
+        name: eslint-config-change-fe
+        command: (cd packages/eslint-config-change-fe && npm install && npm test)
+
+    - run:
+        name: eslint-plugin-change
+        command: (cd packages/eslint-plugin-change && npm install && npm test)

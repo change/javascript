@@ -1,11 +1,7 @@
 module.exports = {
-  plugins: [
-    'jsx-a11y',
-  ],
+  plugins: ['jsx-a11y'],
 
-  extends: [
-    'plugin:jsx-a11y/recommended',
-  ],
+  extends: ['plugin:jsx-a11y/recommended'],
 
   rules: {
     // Make anchor validation work with react-router Link components which take `to`
