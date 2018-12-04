@@ -22,38 +22,78 @@ ruleTester.run('no-async-with-callback', rule, {
   invalid: [
     {
       code: 'const myFunc = async (arg1, callback) => {}',
-      errors: [{ message: 'Do not supply a callback to an async function.' }],
+      errors: [
+        {
+          message:
+            "The parameter 'callback' appears to be a callback. Do not supply a callback to an async function.",
+        },
+      ],
     },
     {
       code: 'const myFunc = async function (arg1, callback) {}',
-      errors: [{ message: 'Do not supply a callback to an async function.' }],
+      errors: [
+        {
+          message:
+            "The parameter 'callback' appears to be a callback. Do not supply a callback to an async function.",
+        },
+      ],
     },
     {
       code: 'async function myFunc (arg1, callback) {}',
-      errors: [{ message: 'Do not supply a callback to an async function.' }],
+      errors: [
+        {
+          message:
+            "The parameter 'callback' appears to be a callback. Do not supply a callback to an async function.",
+        },
+      ],
     },
     {
       code: 'const controller = { async myAction(arg1, callback) {} }',
-      errors: [{ message: 'Do not supply a callback to an async function.' }],
+      errors: [
+        {
+          message:
+            "The parameter 'callback' appears to be a callback. Do not supply a callback to an async function.",
+        },
+      ],
     },
     {
       code: 'const controller = { myAction: async function(arg1, callback) {} }',
-      errors: [{ message: 'Do not supply a callback to an async function.' }],
+      errors: [
+        {
+          message:
+            "The parameter 'callback' appears to be a callback. Do not supply a callback to an async function.",
+        },
+      ],
     },
 
     {
       code: 'const controller = { myAction: async function(arg1, done) {} }',
-      errors: [{ message: 'Do not supply a callback to an async function.' }],
+      errors: [
+        {
+          message:
+            "The parameter 'done' appears to be a callback. Do not supply a callback to an async function.",
+        },
+      ],
     },
 
     {
       code: 'const controller = { myAction: async function(arg1, next) {} }',
-      errors: [{ message: 'Do not supply a callback to an async function.' }],
+      errors: [
+        {
+          message:
+            "The parameter 'next' appears to be a callback. Do not supply a callback to an async function.",
+        },
+      ],
     },
 
     {
       code: 'const controller = { myAction: async function(arg1, cb) {} }',
-      errors: [{ message: 'Do not supply a callback to an async function.' }],
+      errors: [
+        {
+          message:
+            "The parameter 'cb' appears to be a callback. Do not supply a callback to an async function.",
+        },
+      ],
     },
   ],
 });

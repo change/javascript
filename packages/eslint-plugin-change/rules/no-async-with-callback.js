@@ -6,7 +6,10 @@ const doCheck = context => node => {
 
     const callbackParamName = paramNames.find(param => callbackNames.includes(param));
     if (callbackParamName) {
-      context.report(node, 'Do not supply a callback to an async function.');
+      context.report(
+        node,
+        `The parameter '${callbackParamName}' appears to be a callback. Do not supply a callback to an async function.`
+      );
     }
   }
 };
