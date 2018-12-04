@@ -14,10 +14,12 @@ const doCheck = context => node => {
   }
 };
 
-module.exports.create = context => ({
-  ArrowFunctionExpression: doCheck(context),
+module.exports = {
+  create: context => ({
+    ArrowFunctionExpression: doCheck(context),
 
-  FunctionDeclaration: doCheck(context),
+    FunctionDeclaration: doCheck(context),
 
-  FunctionExpression: doCheck(context),
-});
+    FunctionExpression: doCheck(context),
+  }),
+};
