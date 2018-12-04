@@ -15,6 +15,7 @@
     "eslint-config-change-base": "^6.0.0"
   },
   "devDependencies": {
+    "@change-org/eslint-plugin-change": "^1.1.0",
     "eslint": "^5.5.0",
     "eslint-config-prettier": "^3.3.0",
     "eslint-import-resolver-node": "^0.3.2",
@@ -30,6 +31,7 @@
     "prettier": "^1.15.3"
   },
   "peerDependencies": {
+    "@change-org/eslint-plugin-change": "1.x",
     "eslint": "5.x >=5.5.0",
     "eslint-import-resolver-node": "0.3.x >=0.3.2",
     "eslint-plugin-import": "2.x >=2.14.0",

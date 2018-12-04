@@ -14,6 +14,7 @@
     "eslint-config-airbnb-base": "^13.1.0"
   },
   "devDependencies": {
+    "@change-org/eslint-plugin-change": "^1.1.0",
     "eslint": "^5.5.0",
     "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-import": "^2.14.0",
@@ -26,6 +27,7 @@
     "prettier": "^1.15.3"
   },
   "peerDependencies": {
+    "@change-org/eslint-plugin-change": "1.x",
     "eslint": "5.x >=5.5.0",
     "eslint-plugin-import": "2.x >=2.14.0",
     "eslint-plugin-lodash": "3.x >=3.1.0",
