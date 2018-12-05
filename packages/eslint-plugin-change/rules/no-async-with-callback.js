@@ -15,6 +15,12 @@ const doCheck = context => node => {
 };
 
 module.exports = {
+  meta: {
+    docs: {
+      url: 'https://github.com/change/javascript/blob/master/docs/rules/no-async-with-callback.md',
+    },
+  },
+
   create: context => ({
     ArrowFunctionExpression: doCheck(context),
 
