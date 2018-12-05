@@ -13,8 +13,6 @@ interfaces, and providing multiple non-equivalent async interfaces is very confu
 may lead to hard-to-diagnose race conditions, if a new consumer mistakenly awaits the returned promise
 when the callback argument was the correct usage.
 
-An example of a function exhibiting this problem:
-
 This rule prevents functions from accepting callback arguments if they are also `async`.
 
 ## Example failing code
