@@ -17,7 +17,8 @@ const doCheck = context => node => {
 module.exports = {
   meta: {
     docs: {
-      url: 'https://github.com/change/javascript/blob/master/docs/rules/no-async-with-callback.md',
+      url:
+        'https://github.com/change/javascript/blob/master/packages/eslint-plugin-change/docs/rules/no-async-with-callback.md',
     },
   },
 
