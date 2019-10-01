@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-change-base",
-  "version": "9.0.0",
+  "version": "10.0.0",
   "description": "Change.org's base ESLint config",
   "main": "index.js",
   "repository": {
@@ -27,7 +27,6 @@
     "prettier": "^1.18.2"
   },
   "peerDependencies": {
-    "@change-org/eslint-plugin-change": "1.x",
     "eslint": "5.x >=5.15.2",
     "eslint-plugin-import": "2.x >=2.16.0",
     "eslint-plugin-lodash": "6.x",
