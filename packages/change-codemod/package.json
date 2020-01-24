@@ -12,7 +12,7 @@
   "homepage": "https://github.com/change/javascript",
   "dependencies": {
     "js-codemod": "git+ssh://git@github.com/cpojer/js-codemod.git#0677c0b6029031e4f71bbbfc406a0465e6f7acd2",
-    "jscodeshift": "^0.3.30"
+    "jscodeshift": "^0.7.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -33,6 +33,7 @@
     "pretest": "eslint .",
     "test": "jest",
     "codemod": "jscodeshift -t $TRANSFORM_PATH --extensions=js,jsx --ignore-config=$TARGET/.gitignore --printOptions='{ \"trailingCommma\": true }' $TARGET",
-    "lodash-to-object-spread": "TRANSFORM_PATH=transforms/lodash-to-object-assign.js npm run codemod && TRANSFORM_PATH=node_modules/js-codemod/transforms/rm-object-assign.js npm run codemod"
+    "lodash-to-object-spread": "TRANSFORM_PATH=transforms/lodash-to-object-assign.js npm run codemod && TRANSFORM_PATH=node_modules/js-codemod/transforms/rm-object-assign.js npm run codemod",
+    "use-change-components": "TRANSFORM_PATH=transforms/use-change-components.js npm run codemod"
   }
 }
