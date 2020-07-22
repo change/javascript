@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-change-base",
-  "version": "11.0.0",
+  "version": "12.0.0",
   "description": "Change.org's base ESLint config",
   "main": "index.js",
   "repository": {
@@ -11,26 +11,26 @@
   "license": "MIT",
   "homepage": "https://github.com/change/javascript",
   "dependencies": {
-    "eslint-config-airbnb-base": "^13.2.0"
+    "eslint-config-airbnb-base": "^14.2.0"
   },
   "devDependencies": {
     "@change-org/eslint-plugin-change": "^1.1.0",
     "eslint": "^5.16.0",
-    "eslint-config-prettier": "^6.0.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^22.15.0",
-    "eslint-plugin-lodash": "^6.0.0",
-    "eslint-plugin-mocha": "^6.0.0",
-    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^23.18.0",
+    "eslint-plugin-lodash": "^7.1.0",
+    "eslint-plugin-mocha": "^7.0.1",
+    "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-security": "^1.4.0",
-    "prettier": "^1.18.2"
+    "prettier": "^2.0.5"
   },
   "peerDependencies": {
     "@change-org/eslint-plugin-change": "1.x",
     "eslint": "5.x >=5.15.2",
     "eslint-plugin-import": "2.x >=2.16.0",
-    "eslint-plugin-lodash": "6.x",
+    "eslint-plugin-lodash": ">= 6",
     "eslint-plugin-promise": "4.x >=4.0.1",
     "eslint-plugin-security": "1.x >=1.4.0"
   },
