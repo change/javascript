@@ -28,7 +28,7 @@
   },
   "peerDependencies": {
     "@change-org/eslint-plugin-change": "1.x",
-    "eslint": "5.x >=5.15.2",
+    "eslint": ">=5.15.2",
     "eslint-plugin-import": "2.x >=2.16.0",
     "eslint-plugin-lodash": ">= 6",
     "eslint-plugin-promise": "4.x >=4.0.1",
