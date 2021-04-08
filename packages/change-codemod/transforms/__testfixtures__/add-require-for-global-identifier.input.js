@@ -1,4 +1,4 @@
-require('something');
+const x = require('something');
 
 // sinon in this comment should be ignored
 context('when called in the context of a test function', () => {
