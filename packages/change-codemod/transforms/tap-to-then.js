@@ -16,9 +16,13 @@ export default function transformer(file, api, options) {
     },
   });
 
-  tapCalls.forEach((p) => {
+  // eslint-disable-next-line complexity
+  tapCalls.forEach(p => {
+    // eslint-disable-next-line no-param-reassign
     p.node.callee.property.name = 'then';
-    const argumentName = p.node.arguments[0].params.length ? p.node.arguments[0].params[0].name : 'result';
+    const argumentName = p.node.arguments[0].params.length
+      ? p.node.arguments[0].params[0].name
+      : 'result';
     const isLastInChain = !p.parentPath.value.property;
 
     // Add an argument to the lambda function if there is none
@@ -33,4 +37,3 @@ export default function transformer(file, api, options) {
   });
   return root.toSource();
 }
-

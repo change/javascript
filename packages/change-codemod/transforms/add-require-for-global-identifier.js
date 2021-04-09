@@ -41,4 +41,4 @@ module.exports = (file, api, options) => {
     });
   }
   return root.toSource();
-}
+};
