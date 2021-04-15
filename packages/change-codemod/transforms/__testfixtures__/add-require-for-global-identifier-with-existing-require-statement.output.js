@@ -1,5 +1,5 @@
 const sinon = require("sinon");
-const x = require('something');
+const _ = require("lodash");
 
 // sinon in this comment should be ignored
 context('when called in the context of a test function', () => {
