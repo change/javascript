@@ -36,7 +36,8 @@ module.exports = function transformer(file, api, options) {
     if (omitReturn && !isLastInChain) return;
 
     // Add the return statement
-    if (p.node.arguments[0].body.body) p.node.arguments[0].body.body.push(j.returnStatement(j.identifier(argumentName)));
+    if (p.node.arguments[0].body.body)
+      p.node.arguments[0].body.body.push(j.returnStatement(j.identifier(argumentName)));
   });
   return root.toSource();
-}
+};

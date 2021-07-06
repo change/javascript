@@ -15,4 +15,4 @@ module.exports = function transformer(file, api) {
     });
 
   return root.toSource();
-}
+};

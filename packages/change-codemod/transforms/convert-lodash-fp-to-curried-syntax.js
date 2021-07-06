@@ -4,7 +4,7 @@
 // Known issues: Unfortunately expressions will have semicolons in unfortunate
 // and syntactically incorrect places which need to be cleaned up manually
 // (text search and replace works well for most cases).
-module.exports = function transformer(file, api, _options) {
+module.exports = function transformer(file, api) {
   const j = api.jscodeshift;
   const root = j(file.source);
 
@@ -18,11 +18,11 @@ module.exports = function transformer(file, api, _options) {
     .find(j.CallExpression, {
       callee: {
         object: {
-          name: "fp"
-        }
-      }
+          name: 'fp',
+        },
+      },
     })
     .forEach(convertToCurriedSyntax);
 
   return root.toSource();
-}
+};
