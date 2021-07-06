@@ -2,7 +2,8 @@
 // top of the file.  Useful when needing to add requires for global identifiers.
 //
 // The identifier must be specified using the --identifier option, e.g. --identifier=sinon
-// The argument for the new require statement can be specified separately from the targeting identifier, e.g. --identifier=_ --packageName=lodash
+// The argument for the new require statement can be specified separately from
+// the targeting identifier, e.g. --identifier=_ --packageName=lodash
 module.exports = (file, api, options) => {
   const { identifier } = options;
   if (!identifier)

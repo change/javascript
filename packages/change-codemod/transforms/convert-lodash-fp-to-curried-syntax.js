@@ -3,8 +3,8 @@
 //
 // Known issues: Unfortunately expressions will have semicolons in unfortunate
 // and syntactically incorrect places which need to be cleaned up manually
-// (text search and replace works for most cases).
-export default function transformer(file, api, options) {
+// (text search and replace works well for most cases).
+module.exports = function transformer(file, api, _options) {
   const j = api.jscodeshift;
   const root = j(file.source);
 

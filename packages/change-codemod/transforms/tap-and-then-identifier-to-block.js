@@ -21,7 +21,7 @@ function processNode(j, root, p) {
 // Convert tap and then with identifiers to use inline method
 // Tap is converted to then but will be non-standard since the original
 // method likely does not return a value, which is expected of then.
-export default function transformer(file, api) {
+module.exports = function transformer(file, api) {
   const j = api.jscodeshift;
   const root = j(file.source);
   const tapCalls = root.find(j.CallExpression, {

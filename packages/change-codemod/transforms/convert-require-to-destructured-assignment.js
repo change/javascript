@@ -57,7 +57,7 @@ function convertAssignmentToObjectExpansion(path, j, methods) {
 }
 
 // Use the --package=name option to convert usages for that package
-export default function transformer(file, api, options) {
+module.exports = function transformer(file, api, options) {
   const j = api.jscodeshift;
   const root = j(file.source);
 
