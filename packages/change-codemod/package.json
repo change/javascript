@@ -12,7 +12,7 @@
   "homepage": "https://github.com/change/javascript",
   "dependencies": {
     "js-codemod": "git+ssh://git@github.com/cpojer/js-codemod.git#0677c0b6029031e4f71bbbfc406a0465e6f7acd2",
-    "jscodeshift": "^0.7.0"
+    "jscodeshift": "^0.13.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
