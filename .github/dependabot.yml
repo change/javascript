@@ -3,7 +3,7 @@
 version: 2
 updates:
   - package-ecosystem: npm
-    directory: /change-codemod
+    directory: /packages/change-codemod
     schedule:
       interval: daily
     open-pull-requests-limit: 10
@@ -18,12 +18,12 @@ updates:
       interval: daily
     open-pull-requests-limit: 10
     reviewers:
-      - change/squad-fe-framework
+      - change/packages/squad-fe-framework
     labels:
       - dependencies
       - fe-framework
   - package-ecosystem: npm
-    directory: /eslint-config-change-fe
+    directory: /packages/eslint-config-change-fe
     schedule:
       interval: daily
     open-pull-requests-limit: 10
@@ -33,7 +33,7 @@ updates:
       - dependencies
       - fe-framework
   - package-ecosystem: npm
-    directory: /eslint-plugin-change
+    directory: /packages/eslint-plugin-change
     schedule:
       interval: daily
     open-pull-requests-limit: 10
