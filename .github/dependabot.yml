@@ -1,0 +1,57 @@
+# https://docs.github.com/en/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/customizing-dependency-updates
+
+version: 2
+registries:
+  npm-github:
+    type: npm-registry
+    url: https://npm.pkg.github.com
+    token: ${{secrets.CHANGE_BUILD_ACCESS_TOKEN}}
+updates:
+  - package-ecosystem: npm
+    directory: /change-codemod
+    registries:
+      - npm-github
+    schedule:
+      interval: daily
+    open-pull-requests-limit: 10
+    reviewers:
+      - change/squad-fe-framework
+    labels:
+      - dependencies
+      - fe-framework
+  - package-ecosystem: npm
+    directory: /eslint-config-change-base
+    registries:
+      - npm-github
+    schedule:
+      interval: daily
+    open-pull-requests-limit: 10
+    reviewers:
+      - change/squad-fe-framework
+    labels:
+      - dependencies
+      - fe-framework
+  - package-ecosystem: npm
+    directory: /eslint-config-change-fe
+    registries:
+      - npm-github
+    schedule:
+      interval: daily
+    open-pull-requests-limit: 10
+    reviewers:
+      - change/squad-fe-framework
+    labels:
+      - dependencies
+      - fe-framework
+  - package-ecosystem: npm
+    directory: /eslint-plugin-change
+    registries:
+      - npm-github
+    schedule:
+      interval: daily
+    open-pull-requests-limit: 10
+    reviewers:
+      - change/squad-fe-framework
+    labels:
+      - dependencies
+      - fe-framework
