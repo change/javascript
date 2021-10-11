@@ -11,27 +11,27 @@
   "license": "MIT",
   "homepage": "https://github.com/change/javascript",
   "dependencies": {
-    "eslint-config-airbnb-base": "^14.2.0"
+    "eslint-config-airbnb-base": "^14.2.1"
   },
   "devDependencies": {
     "@change-org/eslint-plugin-change": "^1.1.0",
     "eslint": "^7.18.0",
-    "eslint-config-prettier": "^7.2.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jest": "^24.1.3",
+    "eslint-plugin-jest": "^25.0.5",
     "eslint-plugin-lodash": "^7.1.0",
-    "eslint-plugin-mocha": "^8.0.0",
-    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-mocha": "^9.0.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-security": "^1.4.0",
-    "prettier": "^2.2.1"
+    "prettier": "^2.4.1"
   },
   "peerDependencies": {
     "@change-org/eslint-plugin-change": ">=1",
-    "eslint": ">=5",
+    "eslint": ">=7",
     "eslint-plugin-import": ">=2",
-    "eslint-plugin-lodash": ">=6",
-    "eslint-plugin-promise": ">=4",
+    "eslint-plugin-lodash": ">=7",
+    "eslint-plugin-promise": ">=5",
     "eslint-plugin-security": ">=1"
   },
   "engines": {

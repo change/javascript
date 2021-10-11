@@ -18,7 +18,7 @@ module.exports = (file, api, options) => {
   const alreadyHasRequireDeclaration =
     root
       .find(j.CallExpression, { callee: { name: 'require' } })
-      .filter(n => n.node.arguments.length >= 1 && n.node.arguments[0].value === packageName)
+      .filter((n) => n.node.arguments.length >= 1 && n.node.arguments[0].value === packageName)
       .size() > 0;
   if (alreadyHasRequireDeclaration) return root.toSource();
 
@@ -37,7 +37,7 @@ module.exports = (file, api, options) => {
         j.callExpression(j.identifier('require'), [j.literal(packageName)])
       ),
     ]);
-    root.find(j.Program).forEach(p => {
+    root.find(j.Program).forEach((p) => {
       p.value.body.unshift(variableDec);
     });
   }

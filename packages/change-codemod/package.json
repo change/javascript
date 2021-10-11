@@ -12,22 +12,23 @@
   "homepage": "https://github.com/change/javascript",
   "dependencies": {
     "js-codemod": "git+ssh://git@github.com/cpojer/js-codemod.git#0677c0b6029031e4f71bbbfc406a0465e6f7acd2",
-    "jscodeshift": "^0.7.0"
+    "jscodeshift": "^0.13.0"
   },
   "devDependencies": {
+    "@change-org/eslint-plugin-change": ">=1",
     "babel-core": "^6.26.3",
-    "eslint": "^5.9.0",
-    "eslint-config-change-base": "^6.0.0",
-    "eslint-config-prettier": "^3.3.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jest": "^22.1.0",
-    "eslint-plugin-lodash": "^4.0.0",
-    "eslint-plugin-mocha": "^5.2.0",
-    "eslint-plugin-prettier": "^3.0.0",
-    "eslint-plugin-promise": "^4.0.1",
+    "eslint": "^7.32.0",
+    "eslint-config-change-base": "^13.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jest": "^25.0.5",
+    "eslint-plugin-lodash": "^7.3.0",
+    "eslint-plugin-mocha": "^9.0.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-security": "^1.4.0",
-    "jest": "^23.6.0",
-    "prettier": "^1.15.2"
+    "jest": "^27.2.5",
+    "prettier": "^2.4.1"
   },
   "scripts": {
     "pretest": "eslint .",

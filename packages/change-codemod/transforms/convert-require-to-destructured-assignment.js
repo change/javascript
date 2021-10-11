@@ -14,7 +14,7 @@ function findMemberExpressionsForVariable(path, j, variableName) {
 }
 
 function convertMemberExpressionToIdentifier(path, j, variableName) {
-  findMemberExpressionsForVariable(path, j, variableName).replaceWith(p =>
+  findMemberExpressionsForVariable(path, j, variableName).replaceWith((p) =>
     j.identifier(p.value.property.name)
   );
 }
@@ -22,7 +22,7 @@ function convertMemberExpressionToIdentifier(path, j, variableName) {
 // Return the names of methods accessed on a variable
 function findMethodsAccessedOnVariable(path, j, variableName) {
   const methods = new Set();
-  findMemberExpressionsForVariable(path, j, variableName).forEach(p => {
+  findMemberExpressionsForVariable(path, j, variableName).forEach((p) => {
     methods.add(p.value.property.name);
   });
   return methods;
@@ -34,7 +34,7 @@ function findRequireForPackage(path, j, packageName) {
   const matches = path
     .find(j.CallExpression, { callee: { name: 'require' } })
     .filter(
-      n =>
+      (n) =>
         n.node.arguments.length >= 1 &&
         n.node.arguments[0].value === packageName &&
         n.parentPath.value.id &&
@@ -48,7 +48,7 @@ function findRequireForPackage(path, j, packageName) {
 // object pattern
 function convertAssignmentToObjectExpansion(path, j, methods) {
   log(path);
-  const propertyNodes = Array.from(methods.values(), method => {
+  const propertyNodes = Array.from(methods.values(), (method) => {
     const property = j.property('init', j.identifier(method), j.identifier(method));
     property.shorthand = true;
     return property;

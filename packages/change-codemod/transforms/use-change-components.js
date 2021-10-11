@@ -1,5 +1,5 @@
 const getDestructuredKeys = (j, path) =>
-  path.value.id.properties.map(property => {
+  path.value.id.properties.map((property) => {
     const propertyName = property.key.name;
     const propertyValue = property.value.name;
     const newProperty = j.property('init', j.identifier(propertyName), j.identifier(propertyValue));
@@ -54,7 +54,7 @@ module.exports = function transformer(file, api) {
       },
     })
     .filter(
-      path =>
+      (path) =>
         path.value.init.arguments[0].value &&
         path.value.init.arguments[0].value.match('design-system')
     );
@@ -62,7 +62,7 @@ module.exports = function transformer(file, api) {
   if (!designSystemRequires) return undefined;
 
   // Push object properties for desctructuring of require('@change/components')
-  designSystemRequires.forEach(path => {
+  designSystemRequires.forEach((path) => {
     changeComponentsRequireProperties.push(...createDesignSystemRequireKeys(j, path));
     j(path).remove();
   });

@@ -8,9 +8,9 @@ module.exports = function transformer(file, api) {
         name: 'it',
       },
     })
-    .filter(p => p.node.arguments.length > 1 && p.node.arguments[1].async === true)
+    .filter((p) => p.node.arguments.length > 1 && p.node.arguments[1].async === true)
     .find(j.ReturnStatement)
-    .forEach(p => {
+    .forEach((p) => {
       p.replace(j.expressionStatement(j.awaitExpression(p.value.argument)));
     });
 

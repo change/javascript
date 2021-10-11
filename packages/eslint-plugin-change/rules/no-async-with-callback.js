@@ -1,10 +1,10 @@
 const callbackNames = ['callback', 'done', 'cb', 'next'];
 
-const doCheck = context => node => {
+const doCheck = (context) => (node) => {
   if (node.async) {
-    const paramNames = node.params.filter(n => n.type === 'Identifier').map(n => n.name);
+    const paramNames = node.params.filter((n) => n.type === 'Identifier').map((n) => n.name);
 
-    const callbackParamName = paramNames.find(param => callbackNames.includes(param));
+    const callbackParamName = paramNames.find((param) => callbackNames.includes(param));
     if (callbackParamName) {
       context.report(
         node,
@@ -17,12 +17,11 @@ const doCheck = context => node => {
 module.exports = {
   meta: {
     docs: {
-      url:
-        'https://github.com/change/javascript/blob/master/packages/eslint-plugin-change/docs/rules/no-async-with-callback.md',
+      url: 'https://github.com/change/javascript/blob/master/packages/eslint-plugin-change/docs/rules/no-async-with-callback.md',
     },
   },
 
-  create: context => ({
+  create: (context) => ({
     ArrowFunctionExpression: doCheck(context),
 
     FunctionDeclaration: doCheck(context),
