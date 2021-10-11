@@ -18,7 +18,7 @@
     "babel-core": "^6.26.3",
     "eslint": "^5.9.0",
     "eslint-config-change-base": "^6.0.0",
-    "eslint-config-prettier": "^3.3.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jest": "^22.1.0",
     "eslint-plugin-lodash": "^4.0.0",
