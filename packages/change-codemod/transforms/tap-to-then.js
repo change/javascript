@@ -20,7 +20,7 @@ module.exports = function transformer(file, api, options) {
   });
 
   // eslint-disable-next-line complexity
-  tapCalls.forEach(p => {
+  tapCalls.forEach((p) => {
     if (p.node.arguments[0].type === 'Identifier') return;
 
     // eslint-disable-next-line no-param-reassign

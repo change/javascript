@@ -39,7 +39,7 @@ module.exports = function transformer(file, api) {
     },
   });
 
-  tapCalls.forEach(p => processNode(j, root, p));
-  thenCalls.forEach(p => processNode(j, root, p));
+  tapCalls.forEach((p) => processNode(j, root, p));
+  thenCalls.forEach((p) => processNode(j, root, p));
   return root.toSource();
 };
