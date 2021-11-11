@@ -11,7 +11,7 @@
   "license": "MIT",
   "homepage": "https://github.com/change/javascript",
   "dependencies": {
-    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb": "^19.0.0",
     "eslint-config-change-base": "^14.0.0"
   },
   "devDependencies": {
