@@ -1,6 +1,6 @@
 {
   "name": "@change-org/change-codemod",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "",
   "main": "index.js",
   "repository": {
@@ -12,13 +12,14 @@
   "homepage": "https://github.com/change/javascript",
   "dependencies": {
     "js-codemod": "git+ssh://git@github.com/cpojer/js-codemod.git#0677c0b6029031e4f71bbbfc406a0465e6f7acd2",
-    "jscodeshift": "^0.13.0"
+    "jscodeshift": "^0.13.0",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "@change-org/eslint-plugin-change": ">=2",
+    "@change-org/eslint-plugin-change": "^3.0.1",
     "babel-core": "^6.26.3",
     "eslint": "^8.2.0",
-    "eslint-config-change-base": "^14.0.0",
+    "eslint-config-change-base": "^15.1.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jest": "^25.2.4",

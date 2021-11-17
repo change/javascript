@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-change-base",
-  "version": "14.0.0",
+  "version": "15.1.1",
   "description": "Change.org's base ESLint config",
   "main": "index.js",
   "repository": {
@@ -14,12 +14,12 @@
     "eslint-config-airbnb-base": "^15.0.0"
   },
   "devDependencies": {
-    "@change-org/eslint-plugin-change": "^2.0.0",
-    "eslint": "^7.18.0",
+    "@change-org/eslint-plugin-change": "^3.0.1",
+    "eslint": "^8.2.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jest": "^25.2.4",
-    "eslint-plugin-lodash": "^7.1.0",
+    "eslint-plugin-lodash": "^7.3.0",
     "eslint-plugin-mocha": "^9.0.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^5.1.1",
@@ -27,12 +27,12 @@
     "prettier": "^2.4.1"
   },
   "peerDependencies": {
-    "@change-org/eslint-plugin-change": ">=2",
-    "eslint": ">=8",
-    "eslint-plugin-import": ">=2",
-    "eslint-plugin-lodash": ">=7",
-    "eslint-plugin-promise": ">=5",
-    "eslint-plugin-security": ">=1"
+    "@change-org/eslint-plugin-change": "^3.0.1",
+    "eslint": "^8.2.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-lodash": "^7.3.0",
+    "eslint-plugin-promise": "^5.1.1",
+    "eslint-plugin-security": "^1.4.0"
   },
   "engines": {
     "node": ">= 8"
