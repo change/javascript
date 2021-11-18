@@ -13,7 +13,7 @@
   "devDependencies": {
     "babel-core": "^6.26.3",
     "eslint": "^8.2.0",
-    "eslint-config-change-base": "^14.0.0",
+    "eslint-config-change-base": "^15.1.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jest": "^25.2.4",
