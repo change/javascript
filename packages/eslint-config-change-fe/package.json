@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-change-fe",
-  "version": "14.0.1",
+  "version": "14.2.0",
   "description": "Change.org's front-end ESLint config",
   "main": "index.js",
   "repository": {
@@ -12,10 +12,10 @@
   "homepage": "https://github.com/change/javascript",
   "dependencies": {
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-change-base": "^15.1.2"
+    "eslint-config-change-base": "^15.2.0"
   },
   "devDependencies": {
-    "@change-org/eslint-plugin-change": "^3.0.2",
+    "@change-org/eslint-plugin-change": "^3.1.0",
     "eslint": "^8.6.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-import-resolver-node": "^0.3.6",
@@ -31,7 +31,7 @@
     "prettier": "^2.5.1"
   },
   "peerDependencies": {
-    "@change-org/eslint-plugin-change": "^3.0.2",
+    "@change-org/eslint-plugin-change": "^3.1.0",
     "eslint": "^8.6.0",
     "eslint-import-resolver-node": "^0.3.6",
     "eslint-plugin-import": "^2.25.4",
