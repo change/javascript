@@ -15,23 +15,23 @@
   },
   "devDependencies": {
     "@change-org/eslint-plugin-change": "^3.0.2",
-    "eslint": "^8.2.0",
+    "eslint": "^8.6.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jest": "^25.2.4",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^25.3.4",
     "eslint-plugin-lodash": "^7.3.0",
-    "eslint-plugin-mocha": "^9.0.0",
+    "eslint-plugin-mocha": "^10.0.3",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-promise": "^5.1.1",
+    "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-security": "^1.4.0",
-    "prettier": "^2.4.1"
+    "prettier": "^2.5.1"
   },
   "peerDependencies": {
     "@change-org/eslint-plugin-change": "^3.0.2",
-    "eslint": "^8.2.0",
-    "eslint-plugin-import": "^2.25.3",
+    "eslint": "^8.6.0",
+    "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-lodash": "^7.3.0",
-    "eslint-plugin-promise": "^5.1.1",
+    "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-security": "^1.4.0"
   },
   "engines": {
