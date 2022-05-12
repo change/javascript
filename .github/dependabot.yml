@@ -13,7 +13,7 @@ updates:
       - dependencies
       - fe-framework
   - package-ecosystem: npm
-    directory: /eslint-config-change-base
+    directory: /packages/eslint-config-change-base
     schedule:
       interval: daily
     open-pull-requests-limit: 10
