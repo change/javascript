@@ -17,17 +17,17 @@ Additionally, this repo contains `change-codemod` and `eslint-plugin-change` to 
 
 1. eslint-config-change-base
    1. bump @change-org/eslint-plugin-change
-   1. bump version
-   1. release to npm
+   1. bump version (`npm version minor`)
+   1. release to npm (`npm publish`)
 1. eslint-config-change-fe
-   1. bump eslint-config-change-base ans @change-org/eslint-plugin-change
-   1. bump version
-   1. release to npm
+   1. bump eslint-config-change-base and @change-org/eslint-plugin-change
+   1. bump version (`npm version minor`)
+   1. release to npm (`npm publish`)
 1. eslint-plugin-change
    1. bump eslint-config-change-base
-   1. bump version
-   1. release to npm
+   1. bump version (`npm version minor`)
+   1. release to npm (`npm publish`)
 1. change-codemod
    1. bump eslint-config-change-base and @change-org/eslint-plugin-change
-   1. bump version
-   1. release to npm
+   1. bump version (`npm version minor`)
+   1. release to npm (`npm publish`)

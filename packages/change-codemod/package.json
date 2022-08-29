@@ -1,6 +1,6 @@
 {
   "name": "@change-org/change-codemod",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "",
   "main": "index.js",
   "repository": {
@@ -16,10 +16,10 @@
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "@change-org/eslint-plugin-change": "^3.1.0",
+    "@change-org/eslint-plugin-change": "^3.2.0",
     "babel-core": "^6.26.3",
     "eslint": "^8.20.0",
-    "eslint-config-change-base": "^15.2.0",
+    "eslint-config-change-base": "^15.3.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jest": "^27.0.1",
