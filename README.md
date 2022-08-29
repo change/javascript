@@ -12,3 +12,22 @@ other relevant plugins and overrides.
 * [eslint-config-change-fe](packages/eslint-config-change-fe) - use for front-end projects
 
 Additionally, this repo contains `change-codemod` and `eslint-plugin-change` to transform Javascript code and enforce the transformations (as well as other custom rules).
+
+## Release process
+
+1. eslint-config-change-base
+   1. bump @change-org/eslint-plugin-change
+   1. bump version
+   1. release to npm
+1. eslint-config-change-fe
+   1. bump eslint-config-change-base ans @change-org/eslint-plugin-change
+   1. bump version
+   1. release to npm
+1. eslint-plugin-change
+   1. bump eslint-config-change-base
+   1. bump version
+   1. release to npm
+1. change-codemod
+   1. bump eslint-config-change-base and @change-org/eslint-plugin-change
+   1. bump version
+   1. release to npm
