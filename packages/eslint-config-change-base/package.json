@@ -24,7 +24,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-security": "^1.5.0",
-    "prettier": "^2.5.1"
+    "prettier": "^3.0.1"
   },
   "peerDependencies": {
     "@change-org/eslint-plugin-change": "^3.1.0",
