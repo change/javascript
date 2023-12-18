@@ -4,7 +4,7 @@ jobs:
     parallelism: 1
     working_directory: ~/change/javascript
     docker:
-    - image: cimg/node:16.13.0
+    - image: cimg/node:18.19.0
 
     steps:
     - checkout
