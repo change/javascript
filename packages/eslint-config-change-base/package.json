@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-change-base",
-  "version": "16.0.1",
+  "version": "16.0.2",
   "description": "Change.org's base ESLint config",
   "main": "index.js",
   "repository": {
