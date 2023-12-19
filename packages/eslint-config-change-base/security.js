@@ -1,7 +1,7 @@
 module.exports = {
   plugins: ['security'],
 
-  extends: ['plugin:security/recommended'],
+  extends: ['plugin:security/recommended-legacy'],
 
   rules: {
     // This is already done by import/no-dynamic-require
